@@ -76,7 +76,7 @@ exports.courseEnrollmentEmail = (courseName, name) => {
                   are excited to have you as a participant!</p>
               <p>Please log in to your learning dashboard to access the course materials and start your learning journey.
               </p>
-              <a class="cta" href="https://codeplay-edtech-project.vercel.app/dashboard">Go to Dashboard</a>
+              <a class="cta" href="https://learnify-edtech.netlify.app/">Go to Dashboard</a>
           </div>
           <div class="support">If you have any questions or need assistance, please feel free to reach out to us at <a
                   href="learnifydummy@gmail.com">info@learnify.com</a>. We are here to help!</div>
