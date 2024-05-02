@@ -2,7 +2,7 @@ const Course = require("../models/Course");
 const Category = require("../models/Category");
 const User = require("../models/User");
 const Section = require("../models/Section");
-const Subsection = require("../models/SubSection");
+const SubSection = require("../models/SubSection");
 const { uploadImageToCloudinary } = require("../utils/imageUploader");
 const { convertSecondsToDuration } = require("../utils/secToDuration");
 const CourseProgress = require("../models/CourseProgress");
@@ -396,7 +396,7 @@ exports.deleteCourse = async (req, res) => {
       if (section) {
         const subSections = section.subSection;
         for (const subSectionId of subSections) {
-          await Subsection.findByIdAndDelete(subSectionId);
+          await SubSection.findByIdAndDelete(subSectionId);
         }
       }
 
